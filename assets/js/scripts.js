@@ -13,10 +13,11 @@ actionButtons.forEach(button => {
 });
 
 // clique nos personagens
-const charactersButtons = document.querySelectorAll(".character");
+const charactersButtons = document.querySelectorAll(".character_top");
+
 charactersButtons.forEach(button => {
   button.addEventListener("click", (event) => {
-    const character = event.currentTarget;
+    const character = button.closest(".character");
     const isOpen = character.classList.contains("show");
 
     // fecha todos antes de abrir o atual
