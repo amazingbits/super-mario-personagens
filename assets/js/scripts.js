@@ -49,7 +49,7 @@ function prepareElements(characterButton) {
 function showCharacterDetails(characterButton) {
   const { icon, ctImage, characterBody } = prepareElements(characterButton);
 
-  icon.classList.add("rotate_180deg");
+  icon.style.setProperty("--rotation", "180deg");
   ctImage.querySelector("img").style.display = "none";
   characterButton.style.borderColor = "#FFFFFF";
 
@@ -61,7 +61,7 @@ function showCharacterDetails(characterButton) {
 function hideCharacterDetails(characterButton) {
   const { icon, ctImage, characterBody } = prepareElements(characterButton);
 
-  icon.classList.remove("rotate_180deg");
+  icon.style.setProperty("--rotation", "0deg");
   ctImage.querySelector("img").style.display = "flex";
   characterButton.style.borderColor = "transparent";
 

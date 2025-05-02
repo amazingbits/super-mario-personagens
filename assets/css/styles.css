@@ -193,6 +193,11 @@ main .characters_wrapper .characters_content .character .character_top:hover .ca
   animation: upAndDown .6s ease-in-out infinite;
 }
 
+main .characters_wrapper .characters_content .character.show .caret_down {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
 @media screen and (max-width:790px) {
   main .characters_wrapper .characters_content .character .character_top {
     display: flex;
@@ -392,11 +397,6 @@ main .characters_wrapper .characters_content .character .character_body .cb_acti
   color: var(--color-black);
 }
 
-.rotate_180deg {
-  transform: rotate(180deg) !important;
-}
-
-
 /* animations */
 .buttonScaleIn {
   -webkit-animation: aniScaleIn 250ms ease-in-out both;
@@ -473,15 +473,13 @@ main .characters_wrapper .characters_content .character .character_body .cb_acti
 
 @keyframes upAndDown {
   0% {
-    transform: translateY(0);
+    transform: rotate(var(--rotation, 0deg)) translateY(0);
   }
-
   50% {
-    transform: translateY(-10px);
+    transform: rotate(var(--rotation, 0deg)) translateY(-10px);
   }
-
   100% {
-    transform: translateY(0);
+    transform: rotate(var(--rotation, 0deg)) translateY(0);
   }
 }
 
