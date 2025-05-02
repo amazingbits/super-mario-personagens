@@ -153,6 +153,7 @@ main .characters_wrapper .characters_content {
 main .characters_wrapper .characters_content .character {
   border-radius: 20px;
   border: 3px solid transparent;
+  scroll-margin-top: 2rem;
 }
 
 main .characters_wrapper .characters_content .character .character_top {

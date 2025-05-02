@@ -53,7 +53,7 @@ function showCharacterDetails(characterButton) {
   characterButton.style.borderColor = "#FFFFFF";
 
   Slide.down(characterBody, 600, () => {
-    characterBody.scrollIntoView({ behavior: "smooth", block: "center" });
+    characterButton.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 }
 
