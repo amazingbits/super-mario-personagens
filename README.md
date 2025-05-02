@@ -13,7 +13,7 @@ Bem-vindo ao projeto **Super Mario Personagens**, uma interface divertida e inte
 
 ## 🖼️ Preview
 
-![preview](./assets/img/github_preview.png)
+![preview](./assets/img/github_preview.PNG)
 
 ---
 
